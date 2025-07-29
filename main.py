@@ -217,7 +217,7 @@ def main():
     html_file_path = "mosaicco.com.html"
     # The remote URL location.
     remote_url = "https://mosaicco.com/ProductsandServices"
-    """
+    
     # Remove the current HTML file
     if check_file_exists(system_path=html_file_path):
         remove_system_file(system_path=html_file_path)
@@ -226,7 +226,6 @@ def main():
     if check_file_exists(system_path=html_file_path) == False:
         # Save the HTML.
         download_file_from_url(remote_url, html_file_path)
-    """
 
     # Extract the url from the file
     extracted_file_contnet = read_a_file(html_file_path)
